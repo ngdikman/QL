@@ -1,5 +1,5 @@
 /*
-1 1 * * * jd_ddgj.js
+12 1 * * * jd_ddgj.js
  */
 let lnrun = 0;
 const $ = new Env('京豆国际');
