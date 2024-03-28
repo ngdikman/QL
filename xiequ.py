@@ -1,3 +1,6 @@
+# cron "2 2 29 2 *" 
+
+
 import requests
 import socket
 
