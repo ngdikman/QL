@@ -6,7 +6,7 @@ import socket
 
 # 删除所有已有的白名单 IP，uid&ukey改成自己的
 delete_url1 = "http://op.xiequ.cn/IpWhiteList.aspx?uid=138360&ukey=3306992EFDE6D64642800A28D4C1D939&act=del&ip=all"
-response = requests.get(delete_url1)
+response1 = requests.get(delete_url1)
 print(response1.text)
 delete_url2 = "http://op.xiequ.cn/IpWhiteList.aspx?uid=131626&ukey=3880BE483766E7AE9E85CA7C6DC44DC8&act=del&ip=all"
 response2 = requests.get(delete_url2)
@@ -39,7 +39,7 @@ if not ip:
     print(f"无法获取公网IP，使用本地机器IP：{ip}")
 
 # 添加IP到白名单
-add_url = f"http://op.xiequ.cn/IpWhiteList.aspx?uid=131626&ukey=3880BE483766E7AE9E85CA7C6DC44DC8&act=del&ip=all{ip}"
+add_url = f"http://op.xiequ.cn/IpWhiteList.aspx?uid=131626&ukey=3880BE483766E7AE9E85CA7C6DC44DC8&act=add&ip={ip}"
 response = requests.get(add_url)
 print(response.text)
 
