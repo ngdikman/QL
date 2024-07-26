@@ -1,4 +1,7 @@
-# cron "2 2 29 2 *" 
+"""
+cron: 30 * * * *
+
+"""
 
 
 import requests
@@ -26,9 +29,9 @@ except requests.RequestException as e:
 # 如果cip.cc获取IP失败，尝试使用httpbin.org获取公网IP
 if not ip:
     try:
-        response = requests.get('http://httpbin.org/ip')
+        response = requests.get('https://www.ipplus360.com/getIP')
         data = response.json()
-        ip = data['origin']
+        ip = data['data']
         print(f"httpbin.org获取公网IP成功：{ip}")
     except requests.RequestException as e:
         print("使用httpbin.org获取公网IP失败，请检查网络连接或其他问题。")
@@ -42,4 +45,3 @@ if not ip:
 add_url = f"http://op.xiequ.cn/IpWhiteList.aspx?uid=131626&ukey=3880BE483766E7AE9E85CA7C6DC44DC8&act=add&ip={ip}"
 response = requests.get(add_url)
 print(response.text)
-
