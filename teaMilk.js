@@ -39,8 +39,8 @@ const $ = new Env("TeaMilk");
 const ckName = "teaMilk_data";
 const userCookie = $.toObj($.isNode() ? process.env[ckName] : $.getdata(ckName)) || {};
 //notify
-const notify = $.isNode() ? require('./sendNotify') : '';
-$.notifyMsg = []
+// const notify = $.isNode() ? require('./sendNotify') : '';
+// $.notifyMsg = []
 //debug
 $.is_debug = ($.isNode() ? process.env.IS_DEDUG : $.getdata('is_debug')) || 'false';
 //自动清除无效任务
