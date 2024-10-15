@@ -1,5 +1,5 @@
 /**************************************
-const $ = new Env("dlm");
+const $ = new Env("达美乐披萨");
 @Name：达美乐披萨 优惠券抽奖
 @Author：Sliverkiss
 @Date：2023-10-18 08:43:44
