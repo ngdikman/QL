@@ -14,6 +14,9 @@ print(response1.text)
 delete_url2 = "http://op.xiequ.cn/IpWhiteList.aspx?uid=131626&ukey=3880BE483766E7AE9E85CA7C6DC44DC8&act=del&ip=all"
 response2 = requests.get(delete_url2)
 print(response2.text)
+delete_url3 = "http://op.xiequ.cn/IpWhiteList.aspx?uid=150690&ukey=623CAB4268B953D6EC0D2EDB11187F98&act=del&ip=all"
+response3 = requests.get(delete_url3)
+print(response3.text)
 
 # 尝试获取宿主机公网IP地址
 ip = ""
