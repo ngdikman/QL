@@ -1,5 +1,5 @@
 """
-cron: 30 * * * *
+cron: */15 * * * *
 """
 
 import requests
