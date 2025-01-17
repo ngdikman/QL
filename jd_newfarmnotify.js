@@ -4,6 +4,7 @@ cron "15 9,14,17 * * *"
 
 */
 
+const $ = new Env('新农场成熟通知')
 const request = require('request');
 const axios = require('axios');
 
